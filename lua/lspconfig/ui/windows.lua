@@ -106,7 +106,7 @@ function win_float.percentage_range_window(col_range, row_range, options)
 
   local bufnr = options.bufnr or api.nvim_create_buf(false, true)
   local win_id = api.nvim_open_win(bufnr, true, win_opts)
-  api.nvim_win_set_option(win_id, 'winhl', 'FloatBorder:LspInfoBorder')
+  -- api.nvim_win_set_option(win_id, 'winhl', 'FloatBorder:LspInfoBorder')
 
   for k, v in pairs(win_float.default_options) do
     if k ~= 'border' then
